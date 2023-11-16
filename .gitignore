@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/my-docs-client/node_modules
+/my-docs-client/.pnp
+/my-docs-client.pnp.js
+
+# testing
+/my-docs-client/coverage
+
+# production
+/my-docs-client/build
+
+# misc
+/my-docs-client.DS_Store
+/my-docs-client.env.local
+/my-docs-client.env.development.local
+/my-docs-client.env.test.local
+/my-docs-client.env.production.local
+
+/my-docs-clientnpm-debug.log*
+/my-docs-clientyarn-debug.log*
+/my-docs-clientyarn-error.log*
