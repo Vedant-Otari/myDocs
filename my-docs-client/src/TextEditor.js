@@ -9,15 +9,12 @@ const TOOLBAR_OPTIONS = [
   [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
   [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
   [{ 'direction': 'rtl' }],                         // text direction
-
   [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
   [{ 'header': [1, 2, 3, 4, 5, 6,7,8, false] }],
-
   [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
   [{ 'font': [] }],
   [{ 'align': [] }],
-
-  ['clean']                                         // remove formatting button
+  ['clean']
 ];
 
 export default function TextEditor() {
