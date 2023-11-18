@@ -2,6 +2,7 @@
 
 # dependencies
 /my-docs-client/node_modules
+/my-docs-server/node_modules
 /my-docs-client/.pnp
 /my-docs-client.pnp.js
 
