@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ececec;
+  background-color: rgb(97, 97, 97);
+  margin: 0;
+}
+
+.container .ql-editor {
+  width: 8.3in;
+  min-height: 11.7in;
+  padding: 1in;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  background-color: white;
+}
+
+.container .ql-container.ql-snow {
+  padding-top: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.container .ql-toolbar.ql-snow {
+  display: flex;
+  justify-content: center;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #e1e1e1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 25px auto 0px auto;
+  transition: 0.5s ease;
+  width: fit-content;
+}
+.container .ql-toolbar.ql-snow:hover{
+  transform: scale(1.01);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+}
+
+header {
+  padding: 5px 10px;
+  height: 50px;
+  width: 100%;
+  background: gray;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header input{
+  text-align: center;
+  font-size: medium;
+  height: 100%;
+  border-radius: 10px;
+}
+header .heading{
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+@media print {
+
+  body {
+    background: none;
+  }
+
+  .container .ql-editor {
+    width: 6.5in;
+    height: 9in;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    align-self: flex-start;
+  }
+  .container .ql-toolbar.ql-snow {
+    display: none;
+  }
+  header{
+    display: none;
+  }
+}
+
+@page {
+  margin: 1in;
+  width: 30px;
+  height: 100px;
+}
