@@ -94,5 +94,11 @@ export default function TextEditor() {
     setQuill(q);
   }, []);
 
-  return <div className="container" ref={wrapperRef}></div>;
+  return <>
+  <div className="heading">
+    <h2>MyDocs</h2>
+    <h4>Save all your documents here.</h4>
+  </div>
+  <div className="container" ref={wrapperRef}></div>
+  </>
 }
